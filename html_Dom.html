@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+     <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+     <link rel="stylesheet" href="html_Dom.css">
+     
+</head>
+<body>
+    <div id="dom" onclick="clicar()" onmouseenter="entrar()">
+        <em>Minha Div</em>
+    </div> <br>
+    <label for="">Somar :</label>
+    <input type="number" name="txt" id="txt">
+    <input type="number" name="txt1" id="txt1">
+    <input type="button" value="Somar" onclick="somar()">
+    <section id="res"> Resultado : </section>
+    <div id="foto">
+        <img src="sol.jpg" alt="">
+    </div>
+    <div >
+        <p>Ano de Nascimento:
+            <input type="number" name="txtano" id="txtano">
+
+        </p>
+        <p>Sexo:
+            <input type="radio" name="radsexo" id="mas"charset>
+            <label for="mas">Masculino</label>
+            <input type="radio" name="radsexo" id="fem">
+            <label for="fem">Feminino</label>
+        </p>
+        <p>
+            <input id="button" type="button" value="verificar" onclick="verificar()">
+        </p>
+    </div>
+    <div id="resl">
+        
+        Preencha os dados acima para ver o resultado !
+
+    </div>
+    <h1>Meu Primeiro Formulário</h1>
+    <form action="cadratro" autocomplete="on" method="get" >
+        <p><label for="inome">nome:</label> 
+            <input type="text" name="nome" id="inome" required ></p>
+        <p><label for="iSobrenome">Sobrenome:</label>
+             <input type="text" name="Sobrenome" id="iSobrenome" required minlength="10" maxlength="10 " ></p>
+        <p> <input type="submit" value="Enviar"></p>
+    </form>
+    <form id="senha" action="senha" method="post">
+        <h2>Senha</h2>
+        <p><label for="iusu">Usuario:</label>
+            <input type="text" name="usu" id="iusu" placeholder="Digite seu Usuario">
+        </p>
+        <p>
+            <label for="isen"> Senha:</label>
+            <input type="password" name="sen" id="isen" size="10" required minlength="8" maxlength="8">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    
+     <p>&copy;leonardo</p>
+     <script src="script.js">
+        
+     </script>
+</body>
+</html>
